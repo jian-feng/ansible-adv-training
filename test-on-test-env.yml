@@ -2,6 +2,8 @@
   hosts: workstation
   become: false
   gather_facts: false # speeds up testing
+  roles: 
+    - osp-fetch-inventory
 
   tasks: 
 
