@@ -36,14 +36,14 @@
     timeout: 180
   register: floatingip
 
-- name: Wait for "{{ osp_instance_name }} {{ floatingip.floating_ip.floating_ip_address }}" to be available
-  wait_for:
-    host: "{{ floatingip.floating_ip.floating_ip_address }}"
-    port: 22
-    # search_regex: OpenSSH
-    timeout: 180
-    delay: 5
-  # delegate_to: "{{ inventory_hostname }}"
+# - name: Wait for "{{ osp_instance_name }} {{ floatingip.floating_ip.floating_ip_address }}" to be available
+#   wait_for:
+#     host: "{{ floatingip.floating_ip.floating_ip_address }}"
+#     port: 22
+#     # search_regex: OpenSSH
+#     timeout: 180
+#     delay: 5
+#   # delegate_to: "{{ inventory_hostname }}"
 
 - name: Print IP Address
   debug:
