@@ -41,7 +41,7 @@
     host: "{{ floatingip.floating_ip.floating_ip_address }}"
     port: 22
     # search_regex: OpenSSH
-    timeout: 60
+    timeout: 180
     delay: 5
   # delegate_to: "{{ inventory_hostname }}"
 
