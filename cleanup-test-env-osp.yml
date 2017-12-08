@@ -7,10 +7,10 @@
       - app1
       - app2
       - appdb1
-      
+
   tasks:
   
-  - name: Delete a server instance
+  - name: Delete server instance
     os_server:
       cloud: ospcloud
       name: "{{ item }}"

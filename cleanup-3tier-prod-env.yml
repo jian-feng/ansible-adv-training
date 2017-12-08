@@ -1,0 +1,6 @@
+- name: cleanup on aws
+  hosts: frontends:apps:appdbs
+  gather_facts: false
+  become: true
+  roles:
+    - cleaner
